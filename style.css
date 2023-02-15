@@ -1,0 +1,456 @@
+@charset "UTF-8";
+:root {
+  --theme-color-section4: rgb(0, 0, 0);
+  --theme-color-miniPack: #cff56a;
+  --theme-color-individualPack: #ffd2d7;
+  --theme-color-studentPack: #c4b1d4;
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+}
+header .container .header-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header .container .header-content .logo img {
+  width: 135px;
+  padding-top: 1.2rem;
+}
+header .container .header-content .header-nav ul {
+  display: flex;
+  margin: 1rem; /*16px*/
+}
+header .container .header-content .header-nav ul li {
+  margin: 1rem 0.5rem 1rem 1.6rem;
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+header .container .header-content .header-nav ul li:hover a {
+  color: #1ed760;
+}
+header .container .header-content .header-nav ul .line {
+  margin-right: 2rem;
+}
+header .container .header-content .header-nav ul .line::after {
+  content: "";
+  border: 0.04rem whitesmoke solid;
+  margin-left: 30%;
+}
+
+main .section1 {
+  padding: 40px 0 40px 0;
+  background-color: rgb(223, 12, 139);
+}
+main .section1 .container {
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+}
+main .section1 .container .content {
+  width: 715px;
+}
+main .section1 .container .content h1 {
+  font-size: 2.3rem;
+  margin: 3% 0 5% 0;
+}
+main .section1 .container .content h3 {
+  font-weight: 500;
+  font-size: 1.45rem;
+}
+main .section1 .container .content span {
+  text-decoration: line-through;
+}
+main .section1 .container .content .button {
+  margin: 3rem 0 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .section1 .container .content .button a {
+  margin-right: 10px;
+}
+main .section1 .container .content .button a button {
+  height: 100%;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 30px;
+  padding: 15px 30px;
+}
+main .section1 .container .content .button a button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+main .section1 .container .content p {
+  font-size: 11.5px;
+  padding-right: 70px;
+  line-height: 1.5;
+}
+main .section1 .container .content a {
+  text-decoration: underline;
+}
+main .section1 .container .image {
+  text-align: right;
+  align-self: center;
+  width: 440px;
+  padding: 0 10px 0 30px;
+}
+main .section1 .container .image img {
+  width: 100%;
+}
+main .section2 {
+  background-color: black;
+  padding: 72px 0 40px 0;
+}
+main .section2 .container {
+  color: white;
+}
+main .section2 .container .content {
+  text-align: center;
+}
+main .section2 .container .content .title h1 {
+  font-size: 2.5rem;
+}
+main .section2 .container .content .detail-content {
+  padding: 35px;
+}
+main .section2 .container .content .detail-content h2 {
+  font-weight: 400;
+}
+main .section2 .container .content .button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .section2 .container .content .button a {
+  margin: 3px;
+}
+main .section2 .container .content .button a button {
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 15px 30px;
+}
+main .section2 .container .content .button a button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+main .section2 .container .content .rules {
+  padding-top: 30px;
+}
+main .section2 .container .content .rules a {
+  font-size: 10px;
+  font-weight: 540;
+  text-decoration: underline;
+}
+main .section3 {
+  margin-top: 50px;
+  margin-bottom: 110px;
+}
+main .section3 .container .title {
+  text-align: center;
+  font-size: 30px;
+}
+main .section3 .container .title h2 {
+  font-weight: 750;
+}
+main .section3 .container ul {
+  width: 100%;
+  display: flex;
+  margin-top: 5%;
+  flex-wrap: wrap;
+}
+main .section3 .container ul li .image {
+  display: flex;
+  justify-content: center;
+}
+main .section3 .container ul li .image img {
+  width: 50%;
+}
+main .section3 .container ul li .detail {
+  text-align: center;
+}
+main .section3 .container ul li .detail .title-text {
+  margin: 40px 0 15px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+main .section3 .container ul li .detail .text {
+  width: 80%;
+  margin: auto;
+}
+main .section4 {
+  background-color: var(--theme-color-section4);
+  padding: 75px 15px;
+}
+main .section4 .container {
+  color: white;
+}
+main .section4 .container h2 {
+  text-align: center;
+  font-size: 40px;
+}
+main .section4 .container h3 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+main .section4 .container .logo-bank {
+  position: relative;
+  margin: 16px 0 0;
+  display: flex;
+  justify-content: center;
+}
+main .section4 .container .logo-bank ul {
+  display: flex;
+}
+main .section4 .container .logo-bank ul li {
+  padding: 0 5px 0 5px;
+}
+main .section4 .container .logo-bank img {
+  height: 20px;
+}
+main .section4 .container .logo-bank .another-bank ul {
+  display: none;
+  background-color: rgb(255, 253, 253);
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px 1px #bdbdbd;
+  width: 100px;
+  position: absolute;
+  padding: 14px 10px;
+  top: 120%;
+  right: 37.5%;
+}
+main .section4 .container .logo-bank .another-bank ul img {
+  height: 15px;
+  margin-right: 14px;
+  transform: translateX(-40%);
+}
+main .section4 .container .logo-bank .another-bank:hover ul {
+  display: flex;
+  z-index: 1;
+}
+main .section4 .container .advantage {
+  margin: 32px 0;
+  background: linear-gradient(70deg, #b00d6e, #522157, #C2649A, #E4C7B7, #8B4C70, #E4DFD9, #084791);
+  border-radius: 12px;
+  border: 4px solid transparent;
+  position: relative;
+  animation: animate 6s linear infinite;
+  background-size: 200% 200%;
+}
+main .section4 .container .advantage .content {
+  padding: 5px;
+  background-color: var(--theme-color-section4);
+  border-radius: 12px;
+}
+main .section4 .container .advantage .content h2 {
+  margin: 24px 0 12px;
+  font-size: 24px;
+  text-align: center;
+}
+main .section4 .container .advantage .content ul {
+  margin: 0 0 1.5rem 25rem;
+}
+main .section4 .container .advantage .content ul li::before {
+  content: "✓";
+  padding-right: 12px;
+}
+@keyframes animate {
+  100% {
+    background-position-x: -360%;
+  }
+}
+main .section4 .container .type-packs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+main .section4 .container .type-packs .price {
+  display: flex;
+  justify-content: space-between;
+}
+main .section4 .container .type-packs .price h3 {
+  text-align: right;
+  font-size: 24px;
+}
+main .section4 .container .type-packs .price h3:first-child {
+  font-weight: bold;
+}
+main .section4 .container .type-packs .price h3 span {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+}
+main .section4 .container .type-packs ul {
+  height: 150px;
+}
+main .section4 .container .type-packs ul li {
+  margin: 5px 0 10px 17px;
+  list-style: disc;
+  line-height: 1.5;
+}
+main .section4 .container .type-packs div[class$=pack] {
+  border-radius: 10px;
+  padding: 16px 16px;
+}
+main .section4 .container .type-packs div[class$=pack] .introduce {
+  color: black;
+  padding: 5px 7px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 750;
+}
+main .section4 .container .type-packs div[class$=pack] .button {
+  margin: 20px 0;
+}
+main .section4 .container .type-packs div[class$=pack] .button a button {
+  width: 100%;
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .section4 .container .type-packs div[class$=pack] .button:hover {
+  transform: scale(1.05);
+}
+main .section4 .container .type-packs div[class$=pack] .rule {
+  font-size: 12px;
+  text-align: center;
+}
+main .section4 .container .type-packs div[class$=pack] .rule p a {
+  text-decoration: underline;
+}
+main .section4 .container .type-packs div[class$=pack] .rule p sup {
+  font-size: 9px;
+}
+
+footer {
+  background-color: rgb(40, 40, 40);
+  padding: 80px 0 60px 0;
+}
+footer .container {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .container .logo {
+  width: 232px;
+}
+footer .container .logo img {
+  width: 150px;
+}
+footer .container .text {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .container .text ul li {
+  padding: 3px 0 15px;
+  margin: 3px 0 5px 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+footer .container .text ul li:first-child {
+  padding: 20px 0;
+  font-size: 12px;
+  color: #919496;
+  font-weight: 900;
+  letter-spacing: 0.08rem;
+}
+footer .container .text ul li:hover a {
+  color: #1ed760;
+}
+footer .container .text .another {
+  width: 30%;
+}
+footer .container .social-media {
+  padding-right: 10px;
+  width: 428px;
+  z-index: 1;
+}
+footer .container .social-media ul {
+  width: 100%;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 24px;
+}
+footer .container .social-media ul li {
+  position: relative;
+  margin-left: 50px;
+}
+footer .container .social-media ul li i {
+  transform: translate(-9%, 100%);
+  font-size: 25px;
+}
+footer .container .social-media ul li:first-child i {
+  font-size: 28px;
+  transform: translate(-23%, 80%);
+}
+footer .container .social-media ul li::after {
+  content: "";
+  border: 27px solid #222326;
+  border-radius: 50rem;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  z-index: -1;
+}
+footer .container .social-media ul li:hover a {
+  color: #1ed760;
+}
+footer .container .social-media ul li:hover {
+  cursor: pointer;
+}
+footer .container .region {
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+  margin: 100px 15px 0px;
+  padding: 12px 0;
+}
+footer .container .region a {
+  color: #919496;
+}
+footer .container .region a i {
+  color: #919496;
+}
+footer .container .region a:hover {
+  color: #1ed760;
+}
+footer .container .end-page {
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .container .end-page ul {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .container .end-page ul a {
+  color: #919496;
+}
+footer .container .end-page ul a:hover {
+  color: #1ed760;
+}
+footer .container .end-page span {
+  color: #919496;
+  padding-right: 15px;
+}/*# sourceMappingURL=style.css.map */
