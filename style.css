@@ -548,7 +548,7 @@ main .section4 .container .type-packs div[class$=pack] .rule p a {
 main .section4 .container .type-packs div[class$=pack] .rule p sup {
   font-size: 9px;
 }
-@media (max-width: 768px) {
+@media (min-width: 550px) and (max-width: 768px) {
   main .section4 .container {
     display: flex;
     flex-direction: column;
