@@ -11,6 +11,13 @@
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 425px) {
+  .container {
+    max-width: 395px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 header {
   background-color: black;
@@ -55,7 +62,7 @@ main .section1 .container {
   flex-wrap: wrap;
 }
 main .section1 .container .content {
-  width: 715px;
+  width: 61.6%;
 }
 main .section1 .container .content h1 {
   font-size: 2.3rem;
@@ -89,7 +96,6 @@ main .section1 .container .content .button a button:hover {
 }
 main .section1 .container .content p {
   font-size: 11.5px;
-  padding-right: 70px;
   line-height: 1.5;
 }
 main .section1 .container .content a {
@@ -98,11 +104,37 @@ main .section1 .container .content a {
 main .section1 .container .image {
   text-align: right;
   align-self: center;
-  width: 440px;
+  width: 38%;
   padding: 0 10px 0 30px;
 }
 main .section1 .container .image img {
   width: 100%;
+}
+@media (max-width: 425px) {
+  main .section1 .container {
+    flex-direction: column;
+  }
+  main .section1 .container .content {
+    width: 100%;
+  }
+  main .section1 .container .content h1 {
+    padding: 0px;
+    font-size: 1.5rem;
+  }
+  main .section1 .container .content h3 {
+    font-size: 0.95rem;
+  }
+  main .section1 .container .content .button {
+    display: block;
+    margin: 15px;
+  }
+  main .section1 .container .content .button button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  main .section1 .container .image {
+    margin: 20px 0 10px 0;
+  }
 }
 main .section2 {
   background-color: black;
@@ -169,8 +201,7 @@ main .section3 .container ul {
   flex-wrap: wrap;
 }
 main .section3 .container ul li .image {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 main .section3 .container ul li .image img {
   width: 50%;
@@ -186,6 +217,32 @@ main .section3 .container ul li .detail .title-text {
 main .section3 .container ul li .detail .text {
   width: 80%;
   margin: auto;
+}
+@media (max-width: 425px) {
+  main .section3 .container ul li {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  main .section3 .container ul li .image {
+    width: 37.5%;
+    text-align: left;
+  }
+  main .section3 .container ul li .image img {
+    width: 100%;
+  }
+  main .section3 .container ul li .detail {
+    width: 100%;
+    margin-left: 30px;
+    text-align: start;
+  }
+  main .section3 .container ul li .detail .title-text {
+    margin: 16px 0;
+    font-size: 21px;
+  }
+  main .section3 .container ul li .detail .text {
+    font-size: 16px;
+    margin: 0px;
+  }
 }
 main .section4 {
   background-color: var(--theme-color-section4);
@@ -247,19 +304,29 @@ main .section4 .container .advantage {
   position: relative;
   animation: animate 6s linear infinite;
   background-size: 200% 200%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-main .section4 .container .advantage .content {
-  padding: 5px;
+main .section4 .container .advantage::before {
+  content: "";
+  position: absolute;
   background-color: var(--theme-color-section4);
   border-radius: 12px;
+  inset: -1px;
+}
+main .section4 .container .advantage .content {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
 }
 main .section4 .container .advantage .content h2 {
   margin: 24px 0 12px;
   font-size: 24px;
-  text-align: center;
+  text-align: left;
 }
 main .section4 .container .advantage .content ul {
-  margin: 0 0 1.5rem 25rem;
+  margin-bottom: 20px;
 }
 main .section4 .container .advantage .content ul li::before {
   content: "✓";
@@ -272,7 +339,7 @@ main .section4 .container .advantage .content ul li::before {
 }
 main .section4 .container .type-packs {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 main .section4 .container .type-packs .price {
@@ -345,16 +412,21 @@ footer .container {
   flex-wrap: wrap;
 }
 footer .container .logo {
-  width: 232px;
+  width: 11.6rem;
+  margin-bottom: 1rem;
 }
 footer .container .logo img {
   width: 150px;
 }
 footer .container .text {
-  width: 500px;
+  width: 36.25rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+footer .container .text .company, footer .container .text .social, footer .container .text .another {
+  flex: 1 0;
+  padding: 0 15px;
 }
 footer .container .text ul li {
   padding: 3px 0 15px;
@@ -376,8 +448,8 @@ footer .container .text .another {
   width: 30%;
 }
 footer .container .social-media {
-  padding-right: 10px;
-  width: 428px;
+  padding-right: 0px;
+  width: 24.6rem;
   z-index: 1;
 }
 footer .container .social-media ul {
@@ -453,4 +525,26 @@ footer .container .end-page ul a:hover {
 footer .container .end-page span {
   color: #919496;
   padding-right: 15px;
+}
+@media (max-width: 425px) {
+  footer .container .logo img {
+    width: 89px;
+  }
+  footer .container .text {
+    flex-direction: column;
+  }
+  footer .container .text .company, footer .container .text .social, footer .container .text .another {
+    width: 100%;
+    padding: 0 0 2rem 0;
+  }
+  footer .container .social-media {
+    margin-top: 5rem;
+  }
+  footer .container .social-media ul {
+    justify-content: flex-start;
+  }
+  footer .container .end-page ul li {
+    font-size: 0.625rem;
+    justify-content: flex-start;
+  }
 }/*# sourceMappingURL=style.css.map */
